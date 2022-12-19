@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Latest compiled and minified CSS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS only -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/css/base.css" />
+    <title>GrahamCard</title>
+  </head>
+  <body>
+    <!-- Your page here-->
+    <div class="container-fluid">
+      <div class="navbar bg-light">
+        <div class="navbar-brand h1 fs-1">GrahamCard</div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="profileLink" class="link-primary" href="/profile.html?username=heminggs">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a id="logoutLink" class="link-primary" href="/login.html">Log Out</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-8 offset-2">
+          <div class="row">
+            <h2>Create New Game</h2>
+          </div>
+
+          <form action="/start" method="post">
+            <div class="row">
+              <div class="col-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="game" id="game1" checked="checked">
+                  <label class="form-check-label" for="game1">
+                    Klondyke
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="game" id="game2">
+                  <label class="form-check-label" for="game2">
+                    Pyramid
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="game" id="game3">
+                  <label class="form-check-label" for="game3">
+                    Canfield
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="game" id="game4">
+                  <label class="form-check-label" for="game4">
+                    Golf
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="game" id="game5">
+                  <label class="form-check-label" for="game5">
+                    Yukon
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-8">
+                <label for="draw" class="form-label mb-0">Draw:</label>
+                <input class="form-control" name="draw" id="draw" value="Draw 1">
+                <label for="color" class="form-label mb-0">Card Color:</label>
+                <input class="form-control" name="color" id="color" value="Red">
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <button id="submitBtn" type="submit" class="btn btn-primary">Start</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

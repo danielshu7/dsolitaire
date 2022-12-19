@@ -1,0 +1,16 @@
+/* Put your CSS in here */
+html, body {
+    width: 100%;
+}
+
+.container-fluid {
+    width: 90%;
+}
+
+.avatar {
+    aspect-ratio: 1 / 1;
+}
+
+.profile-table {
+    font-weight: bold;
+}

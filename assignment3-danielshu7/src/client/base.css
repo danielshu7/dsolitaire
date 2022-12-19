@@ -1,0 +1,169 @@
+.page-container {
+    display: grid;
+    grid-template:
+        "hd hd hd hd hd" auto
+        "sb sb main main main" auto / 40px 50px 1fr 50px 40px;
+}
+
+.header {
+    grid-area: hd / hd / hd / hd;
+    display: flex;
+    background: rgb(0, 0, 0);
+}
+
+.header-main {
+    flex-grow: 1;
+    font-style: italic;
+}
+
+.header-main h2 {
+    color: rgb(196, 161, 161);
+    margin: 0.75em 0px 0.75em 0.5em;
+}
+
+.logged-out-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 0.5em;
+}
+
+.logged-out-links a {
+    color: rgb(196, 161, 161);
+    padding-right: 0px;
+}
+
+.logged-in-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0.5em;
+}
+
+.logged-in-links a {
+    color: rgb(196, 161, 161);
+    padding-right: 0.5em;
+}
+
+.game-container {
+    grid-area: 2 / sb / auto / main;
+    grid-row-start: 2;
+    grid-column-start: sb;
+    grid-row-end: auto;
+    grid-column-end: main;
+}
+
+.game-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em
+}
+
+.card-holder {
+    margin: 5px;
+    position: relative;
+    border: 2px dashed rgb(128, 128, 128);
+    border-radius: 5px;
+    width: 12%;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-auto-rows: minmax(10px, auto);
+    padding: 1em;
+}
+
+.form-label {
+    padding: 0.5em;
+    text-align: right;
+    font-weight: bold;
+}
+
+.form-input {
+    margin: 0.5em 0px;
+    width: 75%;
+    padding-left: 5px;
+}
+
+.form-button {
+    max-width: 200px;
+    min-width: 150px;
+    max-height: 2em;
+    background: rgb(100, 149, 237);
+    border: none;
+    border-radius: 5px;
+    line-height: 2em;
+    font-size: 0.8em;
+}
+
+.profile-info {
+    display: grid;
+    grid-template:
+        "pfp info" auto / auto 1fr;
+    padding: 2em;
+}
+
+.pfp {
+    grid-area: pfp / pfp / pfp / pfp;
+    padding: 0.5em;
+    max-width: 200px;
+}
+
+.profile-details {
+    grid-area: info / info / info / info;
+    display: grid;
+    grid-template: "labels info" / auto 1fr;
+}
+
+.profile-cols {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.game-types {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+}
+
+.game-settings {
+    display: flex;
+    flex-flow: column;
+}
+
+.results-table {
+    margin: 1em;
+    width: 90%;
+    min-height: 4em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.register-notification {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification-body {
+    padding: 2em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+}

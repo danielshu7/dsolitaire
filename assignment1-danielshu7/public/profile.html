@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Latest compiled and minified CSS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS only -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/css/base.css" />
+    <title>GrahamCard</title>
+  </head>
+  <body>
+    <!-- Your page here-->
+    <div class="container-fluid">
+      <div class="navbar bg-light">
+        <div class="navbar-brand h1 fs-1">GrahamCard</div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="loginLink" class="link-primary" href="/login.html">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a id="regLink" class="link-primary" href="/register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          <h2>Player Profile</h2>
+        </div>
+
+        <div class="col-8">
+          <div class="row">
+            <div class="col-3">
+              <img class="img-fluid avatar" src="/images/red_joker.png">
+            </div>
+
+            <div class="col-9">
+              <div class="row">
+                <div class="col-5 offset-2">
+                  <p class="fs-5"><strong>Username:</strong></p>
+                </div>
+                <div class="col-5">
+                  <p class="fs-5">heminggs</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-5 offset-2">
+                  <p class="fs-5"><strong>First Name:</strong></p>
+                </div>
+                <div class="col-5">
+                  <p class="fs-5">Graham</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-5 offset-2">
+                  <p class="fs-5"><strong>Last Name:</strong></p>
+                </div>
+                <div class="col-5">
+                  <p class="fs-5">Hemingway</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-5 offset-2">
+                  <p class="fs-5"><strong>City:</strong></p>
+                </div>
+                <div class="col-5">
+                  <p class="fs-5">Nashville</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-5 offset-2">
+                  <p class="fs-5"><strong>Email:</strong></p>
+                </div>
+                <div class="col-5">
+                  <p class="fs-5">foo@bar.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <h2>Games Played (7):</h2>
+          </div>
+
+          <div class="row">
+            <a id="startLink" href="/start.html" class="link-primary">Start new game</a>
+          </div>
+
+          <div class="row">
+            <table class="table profile-table">
+              <thead>
+                <tr>
+                  <th>Status</th>
+                  <th>Start Date</th>
+                  <th># of moves</th>
+                  <th>Score</th>
+                  <th>Game Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="./game.html?id=1234" class="link-primary">Active</a></td>
+                  <td>Two hours ago</td>
+                  <td>22</td>
+                  <td>-52</td>
+                  <td>Klondyke 3</td>
+                </tr>
+                <tr>
+                  <td><a href="./game.html?id=1234" class="link-primary">Active</a></td>
+                  <td>One Month Ago</td>
+                  <td>113</td>
+                  <td>14</td>
+                  <td>Klondyke 1</td>
+                </tr>
+                <tr>
+                  <td><a href="/results.html?id=1234" class="link-primary">Complete</a></td>
+                  <td>5/21</td>
+                  <td>17</td>
+                  <td>-52</td>
+                  <td>Klondyke 3</td>
+                </tr>
+                <tr>
+                  <td><a href="/results.html?id=1234" class="link-primary">Complete</a></td>
+                  <td>4/13</td>
+                  <td>44</td>
+                  <td>-52</td>
+                  <td>Klondyke 3</td>
+                </tr>
+                <tr>
+                  <td><a href="/results.html?id=1234" class="link-primary">Complete</a></td>
+                  <td>1/31</td>
+                  <td>96</td>
+                  <td>-36</td>
+                  <td>Klondyke 3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

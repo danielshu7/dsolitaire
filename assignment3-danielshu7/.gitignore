@@ -1,0 +1,9 @@
+node_modules/*
+.idea/*
+public/js/*
+!public/favicon.ico
+!public/index.html
+*.txt
+.DS_store
+package-lock.json
+notes/*
